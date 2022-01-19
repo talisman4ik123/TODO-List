@@ -91,7 +91,8 @@ body {
 }
 
 body {
-  color: #000;
+  background-color: black;
+  color: white;
   line-height: 1;
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
@@ -118,4 +119,101 @@ body {
   box-sizing: content-box;
   margin: 0 auto;
   padding: 0 0.9375rem;
+}
+
+.todo__inner {
+  padding-top: 50px;
+}
+.todo-app__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+  margin-bottom: 50px;
+  letter-spacing: 0.1em;
+}
+.todo-app__form {
+  display: flex;
+  justify-content: center;
+}
+.todo-app__fieldset {
+  display: flex;
+}
+.todo-app__textarea {
+  resize: none;
+  width: 500px;
+  height: 130px;
+  background-color: transparent;
+  border: 1px solid gold;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 0.1em;
+  line-height: 150%;
+}
+.todo-app__textarea::placeholder {
+  color: white;
+}
+.todo-app__textarea::-webkit-scrollbar {
+  width: 0;
+}
+.todo-app__btn-add {
+  background-color: transparent;
+  color: white;
+  border: 1px solid gold;
+  padding: 10px 55px;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.todo-app__filter-list {
+  border: 1px solid gold;
+  padding: 10px 45px 15px 20px;
+  max-height: 42px;
+  overflow-y: hidden;
+}
+.todo-app__filter-item {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  width: fit-content;
+}
+.todo-app__filter-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.todo-app__filter-wrapper {
+  position: relative;
+}
+.todo-app__svg-arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 14px;
+  right: 17px;
+  width: 14px;
+  height: 14px;
+}
+.todo-app__svg-arrow path {
+  fill: white;
+}
+.todo-app__list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+.todo-app__item {
+  position: relative;
+  margin-bottom: 30px;
+  border: 1px solid gold;
+  padding: 20px 50px 20px 50px;
+  border-radius: 5px;
+}
+.todo-app__text {
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  word-break: break-word;
 }

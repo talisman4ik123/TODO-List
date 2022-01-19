@@ -5,3 +5,117 @@
 @import "base/reset";
 @import "base/global";
 
+.todo {
+    &__inner {
+        padding-top: 50px;
+    }
+
+    &-app {
+        &__title {
+            text-align: center;
+            font-weight: 700;
+            font-size: 48px;
+            color: white;
+            margin-bottom: 50px;
+            letter-spacing: 0.1em;
+        }
+
+        &__form {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__fieldset {
+            display: flex;
+        }
+
+        &__textarea {
+            resize: none;
+            width: 500px;
+            height: 130px;
+            background-color: transparent;
+            border: 1px solid gold;
+            border-radius: 5px;
+            padding: 15px;
+            font-size: 20px;
+            color: white;
+            letter-spacing: 0.1em;
+            line-height: 150%;
+            &::placeholder {
+                color: white;
+            }
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+        }
+
+        &__btn-add {
+            background-color: transparent;
+            color: white;
+            border: 1px solid gold;
+            padding: 10px 55px;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        &__filter-list {
+            border: 1px solid gold;
+            padding: 10px 45px 15px 20px;
+            max-height: 42px;
+            overflow-y: hidden;
+        }
+
+        &__filter-item {
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            width: fit-content;
+
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__filter-wrapper {
+            position: relative;
+        }
+
+        &__svg-arrow {
+            position: absolute;
+            cursor: pointer;
+            top: 14px;
+            right: 17px;
+            width: 14px;
+            height: 14px;
+            path {
+                fill: white;
+            }
+        }
+
+        &__list {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 800px;
+        }
+
+        &__item {
+            position: relative;
+            margin-bottom: 30px;
+            border: 1px solid gold;
+            padding: 20px 50px 20px 50px;
+            border-radius: 5px;
+            //overflow: auto;
+        }
+        
+        &__text {
+            font-size: 20px;
+            letter-spacing: 0.05em;
+            word-break: break-word;
+        }
+    }
+}
